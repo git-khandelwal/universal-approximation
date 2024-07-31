@@ -14,7 +14,7 @@ This project illustrates this theorem by:
 4. Performing hyperparameter tuning to optimize model performance.
 
 Project Structure
-universal-approximation-theorem/
+universal-approximation-theorem
 main.py     # Script for generating synthetic datasets and visualizing results
 train.py      # Script for training neural networks using a custom pipeline
 dataset.py      # Custom dataset class implementation
