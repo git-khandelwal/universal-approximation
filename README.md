@@ -15,10 +15,16 @@ This project illustrates this theorem by:
 
 Project Structure
 universal-approximation-theorem
+
 main.py     # Script for generating synthetic datasets and visualizing results
+
 train.py      # Script for training neural networks using a custom pipeline
+
 dataset.py      # Custom dataset class implementation
+
 models.py      # Custom dataset class implementation
+
 requirements.txt       # Required dependencies
+
 README.md              # Project README
 
