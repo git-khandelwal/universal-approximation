@@ -8,15 +8,15 @@ import torch
 # print(torch.__version__)
 
 torch.backends.cudnn.benchmark = True
-limits = 10000 # Number of examples of x
+limits = 1000 # Number of examples of x
 input_size = 5. # Limits for values of x (-input_size, input_size)
 lr = 0.01 # Learning Rate
-epochs = 100 # Training Epochs
+epochs = 10 # Training Epochs
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu") 
 
 
 def funcApprox(x):
-    return np.log(x) + x - x**2
+    return np.sin(x)
 
 
 

@@ -11,12 +11,7 @@ class customDataset(Dataset):
         assert type(input_size) == float
         self.x = np.random.uniform(-1 * input_size, input_size, limits)
         self.x = self.x[:, np.newaxis]
-        self.y = np.array([funcApprox(val) for val in self.x]).reshape(-1)
-
-        # print(self.x.shape)
-        # print(self.y.shape)
-        
-        
+        self.y = np.array([funcApprox(val) for val in self.x]).reshape(-1)    
 
     def __len__(self):
         return len(self.x)

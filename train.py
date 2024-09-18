@@ -21,8 +21,7 @@ class Pipeline():
         self.model = Model()
         self.model.to(device=self.device) 
         obj = customDataset(funcApprox, limits, input_size)
-        self.data = DataLoader(obj,batch_size=64,shuffle=True)
-        
+        self.data = DataLoader(obj,batch_size=64,shuffle=True) 
 
         
     def train(self, epochs):
@@ -47,7 +46,7 @@ class Pipeline():
         model.to(self.device)
         model.load_state_dict(torch.load('model.pth'))
         model.eval()
-        print("Model loaded.")
+        print("Model loaded")
 
         arr = np.random.uniform(-1*self.input_size, self.input_size, self.limits//10)
         x = torch.tensor(arr, dtype = torch.float32).to(self.device)
@@ -56,4 +55,7 @@ class Pipeline():
         y_actual = [self.funcApprox(val) for val in arr]
 
         return arr,y_actual,y_pred
+    
+
+
     
