@@ -1,7 +1,7 @@
 # universal-approximation
 Using neural networks to predict continuous mathematical functions
 
-This project demonstrates the Universal Approximation Theorem using neural networks to approximate various continuous functions. Implemented using TensorFlow/Keras and PyTorch, the project showcases how neural networks can approximate functions like 
+This project demonstrates the Universal Approximation Theorem using neural networks to approximate various continuous functions. Implemented using PyTorch, the project showcases how neural networks can approximate functions like 
 sin(x), exp(x), and composite functions such as exp(x) + x - x**2.
 
 Introduction
@@ -15,6 +15,8 @@ This project illustrates this theorem by:
 
 Project Structure
 universal-approximation-theorem
+
+app.py      # Script for running the flask backend
 
 main.py     # Script for generating synthetic datasets and visualizing results
 
