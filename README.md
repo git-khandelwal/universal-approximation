@@ -31,3 +31,6 @@ requirements.txt       # Required dependencies
 README.md              # Project README
 
 Try it yourself here: http://51.21.67.93/
+
+https://github.com/user-attachments/assets/116bac7b-f653-4b99-b67e-01ec3796db1b
+
